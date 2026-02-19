@@ -195,14 +195,14 @@ Q.budget = 4;
 
 // Proportion of different social groups
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 45, table 3.4 - using 1925 figures
-Q.workers = 48; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
+Q.workers = 30; // industry and trade
+Q.old_middle = 12; // "old mittelstand"
 // 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
+Q.new_middle = 15; // "new mittelstand"
+Q.rural = 24.6; // agriculture and forestry employment... but many of those are proletarians so...
 // source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
 Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.catholics = 9.8;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -234,46 +234,46 @@ Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_pfjp = 60;
-Q.workers_cps = 20;
-Q.workers_usp = 5;
+Q.workers_pfjp = 74;
+Q.workers_cps = 0;
+Q.workers_usp = 24;
 Q.workers_wpb = 0;
-Q.workers_nfp = 5;
+Q.workers_nfp = 2;
 Q.workers_nsdaaap = 0;
 
-Q.old_middle_pfjp = 5;
+Q.old_middle_pfjp = 18;
 Q.old_middle_cps = 0;
-Q.old_middle_usp = 5;
-Q.old_middle_wpb = 25;
-Q.old_middle_nfp = 25;
-Q.old_middle_nsdaaap = 10;
+Q.old_middle_usp = 81;
+Q.old_middle_wpb = 0;
+Q.old_middle_nfp = 1;
+Q.old_middle_nsdaaap = 0;
 
-Q.new_middle_pfjp = 5;
-Q.new_middle_cps = 1;
-Q.new_middle_usp = 10;
-Q.new_middle_wpb = 25;
-Q.new_middle_nfp = 10;
-Q.new_middle_nsdaaap = 5;
+Q.new_middle_pfjp = 4;
+Q.new_middle_cps = 0;
+Q.new_middle_usp = 56;
+Q.new_middle_wpb = 0;
+Q.new_middle_nfp = 4;
+Q.new_middle_nsdaaap = 0;
 
-Q.rural_pfjp = 10;
+Q.rural_pfjp = 3;
 Q.rural_cps = 0;
-Q.rural_usp = 5;
-Q.rural_wpb = 15;
-Q.rural_nfp = 45;
-Q.rural_nsdaaap = 5;
+Q.rural_usp = 65;
+Q.rural_wpb = 2;
+Q.rural_nfp = 30;
+Q.rural_nsdaaap = 0;
 
-Q.unemployed_pfjp = 25;
-Q.unemployed_cps = 55;
-Q.unemployed_usp = 1;
+Q.unemployed_pfjp = 55;
+Q.unemployed_cps = 0;
+Q.unemployed_usp = 44;
 Q.unemployed_wpb = 0;
-Q.unemployed_nfp = 5;
-Q.unemployed_nsdaaap = 15;
+Q.unemployed_nfp = 1;
+Q.unemployed_nsdaaap = 0;
 
-Q.catholics_pfjp = 15;
-Q.catholics_cps = 2;
-Q.catholics_usp = 50;
-Q.catholics_wpb = 5;
-Q.catholics_nfp = 5;
+Q.catholics_pfjp = 34;
+Q.catholics_cps = 0;
+Q.catholics_usp = 3;
+Q.catholics_wpb = 63;
+Q.catholics_nfp = 0;
 Q.catholics_nsdaaap = 0;
 
 
@@ -283,19 +283,19 @@ Q.catholics_nsdaaap = 0;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.pfjp_r = 41;
+Q.pfjp_r = 47;
 Q.cps_r = 0;
-Q.usp_r = 44;
-Q.wpb_r = 6;
-Q.nfp_r = 9;
+Q.usp_r = 49;
+Q.wpb_r = 0;
+Q.nfp_r = 4;
 Q.nsdaaap_r = 0;
 
 // diff from prev
-Q.old_pfjp_r = 41;
+Q.old_pfjp_r = 47;
 Q.old_cps_r = 0;
-Q.old_usp_r = 44;
-Q.old_wpb_r = 6;
-Q.old_nfp_r = 9;
+Q.old_usp_r = 49;
+Q.old_wpb_r = 0;
+Q.old_nfp_r = 4;
 Q.old_nsdaaap_r = 0;
 
 // sapd isn't formed yet, but it may be formed
