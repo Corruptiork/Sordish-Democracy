@@ -241,9 +241,9 @@ Q.workers_wpb = 0;
 Q.workers_nfp = 2;
 Q.workers_nsdaaap = 0;
 
-Q.old_middle_pfjp = 18;
+Q.old_middle_pfjp = 38;
 Q.old_middle_cps = 0;
-Q.old_middle_usp = 81;
+Q.old_middle_usp = 61;
 Q.old_middle_wpb = 0;
 Q.old_middle_nfp = 1;
 Q.old_middle_nsdaaap = 0;
