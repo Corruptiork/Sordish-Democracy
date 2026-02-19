@@ -168,16 +168,16 @@ NSDAAAP: [+ nsdaaap_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: PFJP: [+ workers_pfjp_display +]%, USP: [+ workers_usp_display +]%, CPS: [+ workers_cps_display +]%, WPB: [+ workers_wpb_display +]%; NFP: [+ workers_nfp_display +]%, NSDAAAP: [+ workers_nsdaaap_display +]% ?]
+Workers: PFJP: [+ workers_pfjp_display +]%, USP: [+ workers_usp_display +]%, CPS: [+ workers_cps_display +]%, WPB: [+ workers_wpb_display +]%; NFP: [+ workers_nfp_display +]%, NSDAAAP: [+ workers_nsdaaap_display +]%]
 
-New Middle Class: PFJP: [+ new_middle_pfjp_display +]%, USP: [+ new_middle_usp_display +]%, CPS: [+ new_middle_cps_display +]%, WPB: [+ new_middle_wpb_display +]%; NFP: [+ new_middle_nfp_display +]%, NSDAAAP: [+ new_middle_nsdaaap_display +]% ?]
+New Middle Class: PFJP: [+ new_middle_pfjp_display +]%, USP: [+ new_middle_usp_display +]%, CPS: [+ new_middle_cps_display +]%, WPB: [+ new_middle_wpb_display +]%; NFP: [+ new_middle_nfp_display +]%, NSDAAAP: [+ new_middle_nsdaaap_display +]%]
 
-Old Middle Class: PFJP: [+ old_middle_pfjp_display +]%, USP: [+ old_middle_usp_display +]%, CPS: [+ old_middle_cps_display +]%, WPB: [+ old_middle_wpb_display +]%; NFP: [+ old_middle_nfp_display +]%, NSDAAAP: [+ old_middle_nsdaaap_display +]% ?]
+Old Middle Class: PFJP: [+ old_middle_pfjp_display +]%, USP: [+ old_middle_usp_display +]%, CPS: [+ old_middle_cps_display +]%, WPB: [+ old_middle_wpb_display +]%; NFP: [+ old_middle_nfp_display +]%, NSDAAAP: [+ old_middle_nsdaaap_display +]%]
 
-Rural: PFJP: [+ rural_pfjp_display +]%, USP: [+ rural_usp_display +]%, CPS: [+ rural_cps_display +]%, WPB: [+ rural_wpb_display +]%; NFP: [+ rural_nfp_display +]%, NSDAAAP: [+ rural_nsdaaap_display +]% ?]
+Rural: PFJP: [+ rural_pfjp_display +]%, USP: [+ rural_usp_display +]%, CPS: [+ rural_cps_display +]%, WPB: [+ rural_wpb_display +]%; NFP: [+ rural_nfp_display +]%, NSDAAAP: [+ rural_nsdaaap_display +]%]
 
-Unemployed: PFJP: [+ unemployed_pfjp_display +]%, USP: [+ unemployed_usp_display +]%, CPS: [+ unemployed_cps_display +]%, WPB: [+ unemployed_wpb_display +]%; NFP: [+ unemployed_nfp_display +]%, NSDAAAP: [+ unemployed_nsdaaap_display +]% ?]
+Unemployed: PFJP: [+ unemployed_pfjp_display +]%, USP: [+ unemployed_usp_display +]%, CPS: [+ unemployed_cps_display +]%, WPB: [+ unemployed_wpb_display +]%; NFP: [+ unemployed_nfp_display +]%, NSDAAAP: [+ unemployed_nsdaaap_display +]%]
 
-Catholics: PFJP: [+ catholics_pfjp_display +]%, USP: [+ catholics_usp_display +]%, CPS: [+ catholics_cps_display +]%, WPB: [+ catholics_wpb_display +]%; NFP: [+ catholics_nfp_display +]%, NSDAAAP: [+ catholics_nsdaaap_display +]% ?]
+Catholics: PFJP: [+ catholics_pfjp_display +]%, USP: [+ catholics_usp_display +]%, CPS: [+ catholics_cps_display +]%, WPB: [+ catholics_wpb_display +]%; NFP: [+ catholics_nfp_display +]%, NSDAAAP: [+ catholics_nsdaaap_display +]%]
 
 Support for the Republic: [+ pro_republic_disp +]%
