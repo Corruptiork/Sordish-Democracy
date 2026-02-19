@@ -255,19 +255,19 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **PFJP:** {!</td><td>!} **[+ pfjp_r +]%** {!</td><td>!} **[+ str_change_pfjp +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#55a9dc; outline: 2px; outline-style: solid;'> </div> !} **PFJP:** {!</td><td>!} **[+ pfjp_r +]%** {!</td><td>!} **[+ str_change_pfjp +]** {!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td><td>!} [+ str_change_sapd +] {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !}CPS: {!</td><td>!} [+ cps_r +]% {!</td><td>!} [+ str_change_cps +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a02d27'> </div> !}CPS: {!</td><td>!} [+ cps_r +]% {!</td><td>!} [+ str_change_cps +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div> !} USP: {!</td><td>!} [+ usp_r +]% {!</td><td>!} [+ str_change_usp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#6e3e64'> </div> !} USP: {!</td><td>!} [+ usp_r +]% {!</td><td>!} [+ str_change_usp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div> !} WPB: {!</td><td>!} [+ wpb_r +]% {!</td><td>!} [+ str_change_wpb +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#e4b059'> </div> !} WPB: {!</td><td>!} [+ wpb_r +]% {!</td><td>!} [+ str_change_wpb +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div> !} NFP: {!</td><td>!} [+ nfp_r +]% {!</td><td>!} [+ str_change_nfp +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} NFP: {!</td><td>!} [+ nfp_r +]% {!</td><td>!} [+ str_change_nfp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} NSDAAAP: {!</td><td>!} [+ nsdaaap_r +]% {!</td><td>!} [+ str_change_nsdaaap +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8e8e8e'> </div> !} NSDAAAP: {!</td><td>!} [+ nsdaaap_r +]% {!</td><td>!} [+ str_change_nsdaaap +] {!</td></tr>!}
 {!</table>!}
 
 **Potential coalitions:**
