@@ -187,6 +187,7 @@ data = [
         "legend": "CPS",
         "name": "CPS",
         "seats": Math.round(Q.cps_r*2.5),
+        color: "#a02d27"
     }
 ];
 if (Q.sapd_formed && Q.sapd_r) {
@@ -203,30 +204,35 @@ data = data.concat([
         "legend": "PFJP",
         "name": "PFJP",
         "seats": Math.round(Q.pfjp_r*2.5),
+        "color": "#55a9dc",
     },
     {
         "id": "usp",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.usp_r*2.5),
+        "color": "#6e3e64",
     },
     {
         "id": "wpb",
         "legend": "WPB",
         "name": "WPB",
         "seats": Math.round(Q.wpb_r*2.5),
+        "color": "#e4b059",
     },
     {
         "id": "nfp",
         "legend": "NFP",
         "name": "NFP",
         "seats": Math.round(Q.nfp_r*2.5),
+        "color": "#954B00",
     },
     {
         "id": "nsdaaap",
         "legend": "NSDAAAP",
         "name": "NSDAAAP",
         "seats": Math.round(Q.nsdaaap_r*2.5),
+        "color": "#8e8e8e",
     },
 ]);
 
