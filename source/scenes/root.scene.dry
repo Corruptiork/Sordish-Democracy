@@ -248,23 +248,23 @@ Q.old_middle_wpb = 0;
 Q.old_middle_nfp = 1;
 Q.old_middle_nsdaaap = 0;
 
-Q.new_middle_pfjp = 4;
+Q.new_middle_pfjp = 40;
 Q.new_middle_cps = 0;
 Q.new_middle_usp = 56;
 Q.new_middle_wpb = 0;
 Q.new_middle_nfp = 4;
 Q.new_middle_nsdaaap = 0;
 
-Q.rural_pfjp = 3;
+Q.rural_pfjp = 4;
 Q.rural_cps = 0;
-Q.rural_usp = 65;
-Q.rural_wpb = 2;
-Q.rural_nfp = 30;
+Q.rural_usp = 67;
+Q.rural_wpb = 3;
+Q.rural_nfp = 26;
 Q.rural_nsdaaap = 0;
 
-Q.unemployed_pfjp = 55;
+Q.unemployed_pfjp = 57;
 Q.unemployed_cps = 0;
-Q.unemployed_usp = 44;
+Q.unemployed_usp = 42;
 Q.unemployed_wpb = 0;
 Q.unemployed_nfp = 1;
 Q.unemployed_nsdaaap = 0;
