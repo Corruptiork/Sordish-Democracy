@@ -183,6 +183,13 @@ on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdaaap_r >= 15)
 on-display: {!
 data = [
     {
+        "id": "wpb",
+        "legend": "WPB",
+        "name": "WPB",
+        "seats": Math.round(Q.wpb_r*2.5),
+        "color": "#e4b059",
+    },
+    {
         "id": "cps",
         "legend": "CPS",
         "name": "CPS",
@@ -212,13 +219,6 @@ data = data.concat([
         "name": "Center",
         "seats": Math.round(Q.usp_r*2.5),
         "color": "#6e3e64",
-    },
-    {
-        "id": "wpb",
-        "legend": "WPB",
-        "name": "WPB",
-        "seats": Math.round(Q.wpb_r*2.5),
-        "color": "#e4b059",
     },
     {
         "id": "nfp",
