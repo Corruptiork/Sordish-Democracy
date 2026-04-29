@@ -1,0 +1,180 @@
+title: Status
+new-page: true
+is-special: true
+on-arrival: {!
+if (Q.unemployed) {
+    Q.unemployed_2 = Q.unemployed.toFixed(1);
+}
+if (Q.inflation) {
+    Q.inflation_2 = Q.inflation.toFixed(1);
+}
+Q.economic_growth_2 = '0';
+if (Q.economic_growth) {
+    Q.economic_growth_2 = Q.economic_growth.toFixed(1);
+}
+!}
+
+= Status
+
+[+ month : month +] [+ year +]
+
+Resources available: [+ resources +]
+
+PFJP position: [? if pfjp_toleration : toleration ?][? if pfjp_in_government : in government - ?][? if pfjp_toleration == 0 and pfjp_in_government == 0 and pfjp_caretaker == 0 : opposition ?][? if pfjp_caretaker : caretaker government ?]
+[? if in_weimar_coalition and pfjp_in_government: Weimar Coalition ?][? if in_grand_coalition and pfjp_in_government: Grand Coalition ?][? if in_popular_front and pfjp_in_government: Popular Front ?][? if in_left_front and pfjp_in_government: Left Front ?][? if in_pfjp_majority and pfjp_in_government: PFJP majority ?][? if in_minority_government and pfjp_in_government: minority government ?][? if in_emergency_government and pfjp_in_government: emergency government ?]
+
+[? if pfjp_in_government and not in_pfjp_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+
+[? if pfjp_in_government and (in_left_front or in_popular_front): CPS coalition dissent: [+ cps_coalition_dissent : coalition_dissent +] ?]
+
+Internal dissent: [+ dissent_percent : dissent +]
+
+= Government
+
+President: [+ president +]
+
+Chancellor: [+ chancellor +] ([+ chancellor_party +])
+
+Reichstag composition:
+
+# 1949: 30, 1953: 20
+{!<span class="tooltip-text" title="People's Freedom and Justice Party">PFJP</span>!}: [+ pfjp_r +]%
+# 1949: 0, 1953: 8
+[? if cps_formed and cps_r > 0: Communist Party of Sordland: [+ cps_r +]% ?]
+[? if slp_formed and slp_r > 0: Sordish Laissez-Faire Party: [+ slp_r +]% ?]
+# 1949: 34, 1953: 37
+{!<span class="tooltip-text" title="United Sordland Party">USP</span>!}: [+ usp_r +]%
+# 1949: 9, 1953: 11
+{!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ nfp_r +]%
+# 1949: 6, 1953: 9
+{!<span class="tooltip-text" title="Worker's Party of Bludia">WPB</span>!}: [+ wpb_r +]%
+[? if nsdaaap_formed and nsdaaap_r > 0: National Sollist Department of Austerity, Autocracy and Autarky: [+ nsdaaap_r +]% ?]
+# 1949: 21, 1953: 15
+Others: [+ other_r +]%
+
+[? if pfjp_in_government = 1 : Budget: [+ budget +] ?]
+
+Next election: [+ next_election_month : month +] [+ next_election_year +]
+
+= Economics
+
+Inflation: [+ inflation_2 +]%
+
+[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+
+Economic growth: [+ economic_growth_2 +]%
+
+
+
+# = Public Opinion
+
+@politics
+
+= Inter-party Relations
+
+[? if cps_formed and cps_r > 0: {!<span class="tooltip-text" title="Communist Party of Sordland">CPS</span>!}: [+ cps_relation : relationships +] ?]
+
+[? if slp_formed and slp_r > 0: {!<span class="tooltip-text" title="Sordish Laissez-Faire Party">SLP</span>!}: [+ slp_relation : relationships +] ?]
+
+{!<span class="tooltip-text" title="United Sordland Party">USP</span>!}: [+ usp_relation : relationships +]
+
+{!<span class="tooltip-text" title="National Front Party">NFP</span>!}: [+ nfp_relation : relationships +]
+
+{!<span class="tooltip-text" title="Worker's Party of Bludia">WPB</span>!}: [+ wpb_relation : relationships +]
+
+[? if nsdaaap_formed and nsdaaap_r > 0: {!<span class="tooltip-text" title="National Sollist Department of Austerity, Autocracy and Autarky">NSDAAAP</span>!}: [+ nsdaaap_relation : relationships +] ?]
+
+= Internal Factions of the PFJP
+
+{!<span class="tooltip-text" title="The Malenyevist is interested in radical, transformative policies and cooperation with the Contanan Security Pact.">Malenyevist</span>!} strength: [+ malenyevist_strength : strength +], dissent: [+ malenyevist_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The Social Democrats is a faction of social and equality justice, adovacating for state regulation in the economy.">Social Democrat</span>!} strength: [+ social_democrat_strength : strength +], dissent: [+ social_democrat_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The Reformists goal is Constitutional reform and benefits for the citizens of Sordland.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+
+{!<span class="tooltip-text" title="The Business faction is a pragmatic participant in free market economies, seeking to expand the role of the private sector.">Business</span>!} strength: [+ business_strength : strength +], dissent: [+ business_dissent : dissent +]
+
+[? if neorevisionism > 0 : {!<span class="tooltip-text" title="Neorevisionists are a faction that rose from the depths of the 1951 recession, adovating for more practical solutions in the Republic's growing crisis.">Neorevisionist</span>!} strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+
+
+@paramilitaries
+on-arrival: {!
+if (Q.ryf_strength) {
+    Q.ryf_strength_2 = Q.ryf_strength.toFixed(1);
+}
+if (Q.ry_strength) {
+    Q.ry_strength_2 = Q.ry_strength.toFixed(1);
+}
+if (Q.ys_strength) {
+    Q.ys_strength_2 = Q.ys_strength.toFixed(1);
+}
+!}
+
+= Paramilitaries
+
+{!<span class="tooltip-text" title="The Republican Youth Federation is a popular organization for defending democracy, mostly affiliated with the PFJP and USP.">Republican Youth Federation</span>!} Strength: [+ ryf_strength_2 +] thousand
+
+Republican Youth Federation Militarization: [+ ryf_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The Red Youth is a communist group associated with the International Communist Movement.">Red Youth</span>!} Strength: [+ ry_strength_2 +] thousand
+
+Red Youth Militarization: [+ ry_militancy : militancy +]
+
+{!<span class="tooltip-text" title="The Yound Sord's is the Nationalist paramilitary, hellbend on maintain their status quo of Sordland.">Young Sord</span>!} Strength: [+ ys_strength_2 +] thousand
+
+Young Sord Militarization: [+ ys_militancy : militancy +]
+
+= Official military/police
+
+Sordish Armed Forces: [+ sordish_armed_forces_strength +] thousand troops.
+
+Sordish Armed Forces Loyalty: [+ sordish_armed_forces_loyalty : loyalty +]
+
+State police: [+ state_police_strength +] thousand members.
+
+State police loyalty: [+ state_police_loyalty : loyalty +]
+
+[? if pfjp_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+
+@polls
+on-arrival: {!
+Q.pro_republic_disp = Math.round(Q.pro_republic);
+Q.nationalism_disp = Math.round(Q.nationalism);
+Q.socialism_disp = Math.round(Q.socialism);
+!}
+
+= Projected election results
+
+(if the election were to be held now):
+
+PFJP: [+ pfjp_votes +]%
+
+[? if cps_formed: CPS: [+ cps_votes +]% ?]
+
+[? if slp_formed: SLP: [+ slp_votes +]% ?]
+
+USP: [+ usp_votes +]%
+
+NFP: [+ nfp_votes +]%
+
+WPB: [+ wpb_votes +]%
+
+[? if nsdaaap_formed: NSDAAAP: [+ nsdaaap_votes +]% ?]
+
+Others: [+ other_votes +]%
+
+**Detailed results for each demographic**
+
+Workers: PFJP: [+ workers_pfjp_display +]%, [? if cps_formed: CPS: [+ workers_cps_display +]% ?] [? if slp_formed: SLP: [+ workers_slp_display +]% ?] USP: [+ workers_usp_display +]%, NFP: [+ workers_nfp_display +]%; WPB: [+ workers_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ workers_nsdaaap_display +]% ?] Others: [+ workers_other_display +]%
+
+New Middle Class: PFJP: [+ new_middle_pfjp_display +]%, [? if cps_formed: CPS: [+ new_middle_cps_display +]% ?] [? if slp_formed: SLP: [+ new_middle_slp_display +]% ?] USP: [+ new_middle_usp_display +]%, NFP: [+ new_middle_nfp_display +]%; WPB: [+ new_middle_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ new_middle_nsdaaap_display +]% ?] Others: [+ new_middle_other_display +]%
+
+Old Middle Class: PFJP: [+ old_middle_pfjp_display +]%, [? if cps_formed: CPS: [+ old_middle_cps_display +]% ?] [? if slp_formed: SLP: [+ old_middle_slp_display +]% ?] USP: [+ old_middle_usp_display +]%, NFP: [+ old_middle_nfp_display +]%; WPB: [+ old_middle_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ old_middle_nsdaaap_display +]% ?] Others: [+ old_middle_other_display +]%
+
+Rural: PFJP: [+ rural_pfjp_display +]%, [? if cps_formed: CPS: [+ rural_cps_display +]% ?] [? if slp_formed: SLP: [+ rural_slp_display +]% ?] USP: [+ rural_usp_display +]%, NFP: [+ rural_nfp_display +]%; WPB: [+ rural_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ rural_nsdaaap_display +]% ?] Others: [+ rural_other_display +]%
+
+Unemployed: PFJP: [+ unemployed_pfjp_display +]%, [? if cps_formed: CPS: [+ unemployed_cps_display +]% ?] [? if slp_formed: SLP: [+ unemployed_slp_display +]% ?] USP: [+ unemployed_usp_display +]%, NFP: [+ unemployed_nfp_display +]%; WPB: [+ unemployed_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ unemployed_nsdaaap_display +]% ?] Others: [+ unemployed_other_display +]%
+
+Bluds: PFJP: [+ bluds_pfjp_display +]%, [? if cps_formed: CPS: [+ bluds_cps_display +]% ?] [? if slp_formed: SLP: [+ bluds_slp_display +]% ?] USP: [+ bluds_usp_display +]%, NFP: [+ bluds_nfp_display +]%; WPB: [+ bluds_wpb_display +]%, [? if nsdaaap_formed: NSDAAAP: [+ bluds_nsdaaap_display +]% ?] Others: [+ bluds_other_display +]%
+
+Support for the Republic: [+ pro_republic_disp +]%
