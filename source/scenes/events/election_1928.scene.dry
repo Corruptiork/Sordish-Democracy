@@ -1390,7 +1390,7 @@ go-to: ministries
 @drop_justice
 title: Drop the Justice Ministry.
 view-if: justice_minister_party = "PFJP"
-justice_minister = "Koch-Weser"; leverage += 10;
+on-arrival: justice_minister = "Koch-Weser"; leverage += 10;
 tags: drop_mins_1928
 go-to: ministries
 
@@ -1404,7 +1404,7 @@ go-to: ministries
 @drop_agriculture
 title: Drop the Agriculture Ministry.
 view-if: agriculture_minister_party = "PFJP"
-agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "USP" if in_weimar_coalition; agriculture_minister = "Hermes" if in_weimar_coalition
+on-arrival: agriculture_minister = "Dietrich"; leverage += 10; agriculture_minister_party = "USP" if in_weimar_coalition; agriculture_minister = "Hermes" if in_weimar_coalition
 tags: drop_mins_1928
 go-to: ministries
 
