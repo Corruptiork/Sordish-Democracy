@@ -383,9 +383,6 @@ if (Q.nsdaaap_formed && Q.nsdaaap_r) {
     });
 }
 !}
-title: Figures and Charts
-go-to: menu
-on-display: {!
 data = [
     {
         "id": "pfjp",
