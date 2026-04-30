@@ -382,69 +382,6 @@ if (Q.nsdaaap_formed && Q.nsdaaap_r) {
         "seats": Math.round(Q.nsdaaap_r*5),
     });
 }
-!}
-data = [
-    {
-        "id": "pfjp",
-        "legend": "PFJP",
-        "name": "PFJP",
-        "seats": Q.pfjp_r*5,
-    },
-];
-
-if (Q.cps_formed && Q.cps_r) {
-    data.push({
-        "id": "cps",
-        "legend": "CPS",
-        "name": "CPS",
-        "seats": Math.round(Q.cps_r*5),
-    });
-}
-
-if (Q.slp_formed && Q.slp_r) {
-    data.push({
-        "id": "slp",
-        "legend": "SLP",
-        "name": "SLP",
-        "seats": Math.round(Q.slp_r*5),
-    });
-}
-
-data = data.concat([
-    {
-        "id": "usp",
-        "legend": "USP",
-        "name": "USP",
-        "seats": Q.usp_r*5,
-    },
-    {
-        "id": "nfp",
-        "legend": "NFP",
-        "name": "NFP",
-        "seats": Q.nfp_r*5,
-    },
-    {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Q.other_r*5,
-    },
-    {
-        "id": "wpb",
-        "legend": "WPB",
-        "name": "WPB",
-        "seats": Q.wpb_r*5,
-    },
-]);
-
-if (Q.nsdaaap_formed && Q.nsdaaap_r) {
-    data.push({
-        "id": "nsdaaap",
-        "legend": "NSDAAAP",
-        "name": "NSDAAAP",
-        "seats": Math.round(Q.nsdaaap_r*5),
-    });
-}
 
 if (d3 && window) {
     // get screen width
