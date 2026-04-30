@@ -202,13 +202,11 @@ go-to: menu
 
 Current relations: [+ usp_relation : relationships +]
 
-[? if cps_formed: **CPS** - BLANK
+[? if cps_formed: **CPS** - BLANK ?]
+[? if cps_formed: Current relations: [+ cps_relation : relationships +] ?]
 
-Current relations: [+ cps_relation : relationships +] ?]
-
-[? if slp_formed: **SLP** - BLANK
-
-Current relations: [+ slp_relation : relationships +] ?]
+[? if slp_formed: **SLP** - BLANK ?]
+[? if slp_formed: Current relations: [+ slp_relation : relationships +] ?]
 
 # TODO: replace this with the german state party after 1930
 
@@ -220,9 +218,8 @@ Current relations: [+ nfp_relation : relationships +]
 
 Current relations: [+ wpb_relation : relationships +]
 
-[? if nsdaaap_formed: **NSDAAAP** - BLANK
-
-Current relations: [+ nsdaaap_relation : relationships +] ?]
+[? if nsdaaap_formed: **NSDAAAP** - BLANK ?]
+[? if nsdaaap_formed: Current relations: [+ nsdaaap_relation : relationships +] ?]
 
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP.
 
@@ -486,4 +483,6 @@ if (d3 && window) {
 = Economic history
 
 {!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
+# TODO: maybe add textual histories too? some accessibility stuff as well...
+
 # TODO: maybe add textual histories too? some accessibility stuff as well...
