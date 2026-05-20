@@ -1,10 +1,10 @@
 title: Presidential Election
-subtitle: Hindenburg runs for re-election...
-view-if: year = 1932 and (month = 4 or month = 5) and presidential_election_seen = 0
+subtitle: Election season is looming...
+view-if: year = 1949 and month = 2 and presidential_election_seen = 0
 frequency: 1000
 max-visits: 1
 new-page: true
-on-arrival: braun_campaign = 0; hitler_support_hindenburg = 0; presidential_election_seen = 1; nsdap_candidate = "Hitler" if hitler_deported == 0 else nsdap_candidate = "Göring";
+on-arrival: presidential_election_seen = 1
 tags: event
 go-to: election_algorithm
 set-jump: pres_election
@@ -12,16 +12,14 @@ face-image: img/hindenburg_election.jpg
 
 @pres_election
 
-The presidential election is coming up soon. [? if spd_in_government = 0 : While the position of Chancellor is typically more important, recent governments have depended on the president's emergency decree powers, making the office vital. ?] [? if hitler_deported==0 : The Nazis will run Hitler, while the KPD will run Thälmann. A victory for Hitler would mean the end of parliamentary democracy, and the beginning of an era of unspeakable horrors. ?][? if hitler_deported==1 : Since Hitler has been deported, the Nazis will run Hermann Göring in his stead. He is widely seen as a proxy for Hitler, who, despite his legal persecution, retains a popular base who wishes to see him returned to Germany. Meanwhile, the KPD will run Ernst Thälmann. ?]
-[? if sapd_formed: The SAPD, our former leftists, are supporting Thälmann of the KPD, and will likely share an endorsement with the Communists. ?]
+The 1949 presidential election is coming this november. Given the fact that Soll has finally decided to step down as President provides an oppotunity to finally oust the United Sordland Party after two decades of sollist rule. However this election will not be easy, Vice President Alphonso has been the one calling the shots for the past fours years. We presume he has managed to secure enough support from the recently formed Oligarchs such as Walter Tusk and Konrath Koronti.
 
-# if hitler is deported, who would nsdap run? Duesterberg? or Goering?
-# Goering runs, essentially as a proxy for Hitler, who is now stateless.
+While we would normally nominate our canadiate during the PFJP convention in August, by completely ignoring the opinions of the Malenyevists, all factions have agreed to run Frens Richter given his charasmatic prowess and ability to draw massive crowds under the promise of reform. This election is a golden oppotunity we cannot afford to toss due to factionalism.
 
-Many are calling for us to support the incumbent Hindenburg, despite his well-known reactionary tendencies. Is he truly the best bulwark against Hitler's ascension? On the other hand, many in our party are calling for Otto Braun to run again, but he is reluctant.
+- @alphonso_running: 
 
-[? if kpd_relation >= 50 : Another strange possibilty is an united front with the Communists, either to support Thälmann or our own candidate. ?]
-
+@alphonso_running
+subtitle: Alphonso is running of course. Given our very similar platforms, we can no longer rely on our traditional promises.
 
 - @support_hindenburg: Support Hindenburg.
 - @support_braun: Run Otto Braun of the SPD.
