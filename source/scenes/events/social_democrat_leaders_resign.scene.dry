@@ -8,8 +8,6 @@ max-visits: 1
 
 = Social Democrat leaders resign
 
-Our policy choices have greatly offended the Social Democrat faction. Many of our most experienced leaders have resigned.
-
-[? if social_democrat_resign = 1 : Many former Social Democrat's have joined with the CPS, the party formed by dissident malenyevist's. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the PFJP for the support of the working class. ?]
+Our policy choices have greatly offended the Social Democrat faction. With Manoly Suheil having failed her bid for party chairmanship, and the formation of the CPS, she and many Social Democrats see little reason to remain in the PFJP. Now many former Social Democrat's have joined with the CPS, the party formed by dissident malenyevist's. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the PFJP for the support of the working class.
 
 // to do. change the values of the RYF when it forms.
