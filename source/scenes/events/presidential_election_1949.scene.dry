@@ -11,15 +11,61 @@ set-jump: pres_election
 face-image: img/hindenburg_election.jpg
 
 @pres_election
+on-arrival: richter_campaign = 1
 
-The 1949 presidential election is coming this november. Given the fact that Soll has finally decided to step down as President provides an oppotunity to finally oust the United Sordland Party after two decades of sollist rule. However this election will not be easy, Vice President Alphonso has been the one calling the shots for the past fours years. We presume he has managed to secure enough support from the recently formed Oligarchs such as Walter Tusk and Konrath Koronti.
+The 1949 presidential election is coming this november. Given the fact that Soll has finally decided to step down as President provides an opportunity to finally oust the United Sordland Party after two decades of sollist rule. However this election will not be easy, Vice President Alphonso has been the one calling the shots for the past fours years. We presume he has managed to secure enough support from the recently formed Oligarchs such as Walter Tusk and Konrath Koronti.
 
 While we would normally nominate our canadiate during the PFJP convention in August, by completely ignoring the opinions of the Malenyevists, all factions have agreed to run Frens Richter given his charasmatic prowess and ability to draw massive crowds under the promise of reform. This election is a golden oppotunity we cannot afford to toss due to factionalism.
 
-- @alphonso_running: 
+- @candidates_1: Who are the candidates for this years election?
+
+@candidates_1
+
+- @alphonso_running: Alphonso is running of course. He is the Vice President after all.
 
 @alphonso_running
-subtitle: Alphonso is running of course. Given our very similar platforms, we can no longer rely on our traditional promises.
+on-arrival: alphonso_campaign = 1
+
+The fact that Vice President Alphonso is a reformist himself complicates our apporach to the 1949 election. Given that both major parties are campaigning both on reform and privatisation makes it rather hard to distinguish ourselves. Unfortunately for our cause, Soll's fifth and final term wasnt a disaster like his fourth. Given that Alphonso is the incumbent government, it seems that we will need to maximise our election campaign to convince voters that the USP is nothing but a party of incompetance.
+
+- @candidates_2: Who else is running?
+
+@candidates_2
+
+-@kibener_running: The presumed NFP candidate.
+
+@kibener_running
+on-arrival: kibener_campaign = 1
+
+The now "slightly moderated" National Front Party, better known as the NFP are presumed to put forth Kesaro Kibener as their candidate for President. It is expected he will (probably) siphon some disgruntled nationalists previously voting for the USP, this course of action will be very useful to us.
+
+- @candidates_3: Who else is running?
+
+@candidates_3
+
+- @leke_running: The Presumed WPB candidate... Wait what?
+
+@leke_running
+on-arrival: leke_campaign = 1
+
+Believe it or not the Worker's Party of Bludia, better known as the WPB have shockingly decided to announce Mansoun Leke as their candidate for the Presidency. This act of absurdity cannot be tolerated and they must face the full consequences of their idiotic actions at once!
+
+The audacity to run Masoun Leke has alerted the leadership of the PFJP to the very threat they represent to Sordish Democracy!
+
+- @blud_hater_1: Why do you hate the Bluds so much?
+
+@blud_hater_1
+
+The hell are you talking about? I'm simply saying that the WPB's choice to run Masoun Leke is STUPID because he will siphon votes AWAY from the PFJP, potentially costing us the ELECTION.
+
+- @blud_hater_2: I don't believe you.
+- @blud_hater_2: Sure buddy sure.
+
+@blud_hater_2
+
+Anyway as I was saying.
+
+# from here
 
 - @support_hindenburg: Support Hindenburg.
 - @support_braun: Run Otto Braun of the SPD.
