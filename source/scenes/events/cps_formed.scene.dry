@@ -1,23 +1,39 @@
 on-arrival: {!
 // set up the infrastructure
 Q.cps_formed = 1;
-Q.parties.push('cps');
 
+if (!Q.parties.includes('cps')) {
+    Q.parties.push('cps');
+}
+
+// Base CPS support from the Malenyevist split
 Q.workers_cps = 10;
-Q.workers_pfjp -= 3;
 Q.new_middle_cps = 1;
 Q.old_middle_cps = 0;
 Q.rural_cps = 0;
 Q.unemployed_cps = 2;
 Q.bluds_cps = 0;
 
-if (Q.unions_independent) {
-    Q.workers_cps += 8;
+// PFJP loses voters when CPS forms
+Q.workers_pfjp -= 5;
+Q.unemployed_pfjp -= 5;
+
+// If the Social Democrat faction has already split,
+// some of their support joins the CPS as well.
+if (Q.social_democrat_resign) {
+    Q.workers_cps += 5;
+    Q.new_middle_cps += 2;
+    Q.old_middle_cps += 1;
+
+    Q.workers_pfjp -= 5;
+    Q.new_middle_pfjp -= 2;
+    Q.old_middle_pfjp -= 1;
 }
 
 // update all records
 Q.cps_r = 0;
 Q.old_cps_r = 0;
+
 for (var record of Q.election_records) {
     record['cps'] = 0;
 }
